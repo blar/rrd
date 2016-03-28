@@ -1,0 +1,20 @@
+language: php
+
+php:
+  - 7.0
+
+cache:
+    apt: true
+    directories:
+      - $HOME/.composer/cache
+
+before_script:
+  - composer install
+
+after_success:
+  - php vendor/bin/coveralls -v
+
+notifications:
+  irc:
+    channels:
+      - "irc.quakenet.org#blar-dev"

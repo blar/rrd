@@ -1,0 +1,34 @@
+{
+    "name": "blar/rrd",
+    "description": "RRD for PHP",
+    "type": "library",
+    "keywords": [
+        "php",
+        "rrd"
+    ],
+    "homepage": "https://github.com/blar/rrd/",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Andreas Treichel",
+            "email": "gmblar+github@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "ext-rrd": "*"
+    },
+    "require-dev": {
+        "satooshi/php-coveralls": "^1.0"
+    },
+    "support": {
+        "source": "https://github.com/blar/rrd/",
+        "issues": "https://github.com/blar/rrd/issues",
+        "wiki": "https://github.com/blar/rrd/wiki"
+    },
+    "autoload": {
+        "psr-4": {
+            "Blar\\Rrd\\": "lib/Blar/Rrd/"
+        }
+    }
+}
